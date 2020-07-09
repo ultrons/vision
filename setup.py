@@ -357,7 +357,7 @@ def get_extensions():
     ffmpeg_exe = distutils.spawn.find_executable('ffmpeg')
     has_ffmpeg = ffmpeg_exe is not None
 
-    if has_ffmpeg:
+    if False:
         ffmpeg_bin = os.path.dirname(ffmpeg_exe)
         ffmpeg_root = os.path.dirname(ffmpeg_bin)
         ffmpeg_include_dir = os.path.join(ffmpeg_root, 'include')
